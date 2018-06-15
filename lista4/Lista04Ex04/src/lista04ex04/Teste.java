@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Teste {
 
     public static void main(String[] args) {
-        Conta c1;
+        //Conta c1;
         ContaCorrente c2;
         ContaPoupança c3;
         ArrayList <Conta> contas = new ArrayList<Conta>();
@@ -25,7 +25,7 @@ public class Teste {
         
         atualizador.atualizar(contas);
 
-        System.out.println("Teste2 - Usando Atualizador\n");
+        System.out.println("Teste - Usando Atualizador\n");
         //System.out.println("Conta: "+c1.getSaldo());
         System.out.println("Conta Corrente: "+c2.getSaldo());
         System.out.println("Conta Poupança: "+c3.getSaldo());
