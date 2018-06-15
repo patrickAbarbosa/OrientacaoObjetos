@@ -1,4 +1,4 @@
-package exercicio4;
+package exercicio2;
 public class Homem extends Personagem{
 
     public Homem(String nome, int numeroCasas) {

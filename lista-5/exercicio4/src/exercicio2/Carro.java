@@ -1,9 +1,14 @@
-package exercicio4;
+package exercicio2;
 public class Carro extends Personagem{
-    private float nivelCombustivel;
+    protected float nivelCombustivel;
 
     public Carro(String nome, int numeroCasas, float nivelCombustivel) {
         super(nome, numeroCasas);
+        this.nivelCombustivel = nivelCombustivel;
+    }
+    
+    public Carro(String nome, float nivelCombustivel) {
+        super(nome, 12);
         this.nivelCombustivel = nivelCombustivel;
     }
 
