@@ -21,7 +21,7 @@ public class Teste2 {
         
         atualizador.atualizar(contas);
 
-        System.out.println("Teste2 - Usando Atualizador\n");
+        System.out.println("Teste - Usando Atualizador\n");
         //System.out.println("Conta: "+c1.getSaldo());
         System.out.println("Conta Corrente: "+c2.getSaldo());
         System.out.println("Conta Poupança: "+c3.getSaldo());

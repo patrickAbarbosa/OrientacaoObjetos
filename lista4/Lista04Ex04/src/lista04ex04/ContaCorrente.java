@@ -13,6 +13,6 @@ public class ContaCorrente extends Conta {
     
     @Override
     public void atualizarSaldo(float taxa) {
-        this.saldo += (this.saldo * taxa * 2)/100;
+        this.saldo += ((float)(this.saldo * taxa * 2)/100);
     }
 }
