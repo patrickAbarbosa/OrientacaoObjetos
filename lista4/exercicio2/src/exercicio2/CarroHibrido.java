@@ -18,13 +18,17 @@ public class CarroHibrido extends Carro{
 
     @Override
     public int andar(int andar) {
-        if(this.nivelBateria >=2)
+        if(this.nivelBateria >=2){
+            this.nivelBateria -= (float)(this.numeroCasas * andar * 0.01);
             return this.numeroCasas * andar;
-        else if(super(nivel))
+        }         
+        else if(this.nivelCombustivel >=10){
+            this.nivelCombustivel -= (float)(andar * this.numeroCasas * 0.02f);
+            return  andar * this.numeroCasas;
+        }
+        else{
+            System.out.println("Não é possivel andar, nível de gasolina baixo!");
+            return 0;
+        }       
     }
-    
-    
-    
-    
-    
 }
