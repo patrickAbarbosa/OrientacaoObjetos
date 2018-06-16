@@ -22,8 +22,11 @@ public class Carro extends Personagem{
 
     @Override
     public int andar(int andar) {
-        if(this.nivelCombustivel >= 10)
+        if(this.nivelCombustivel >= 10){
+            this.nivelCombustivel -= (float)(andar * this.nivelCombustivel * 0.2f);
             return andar * this.numeroCasas;
+        }
+            
         else{
             System.out.println("Não é possivel andar, nível de combustivel baixo");
             return 0;

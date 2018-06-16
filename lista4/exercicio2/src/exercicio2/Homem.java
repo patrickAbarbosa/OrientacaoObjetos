@@ -8,7 +8,9 @@ public class Homem extends Personagem{
         this.nome = nome;
         this.numeroCasas = 1; 
     }
-
+    public Homem(){
+        
+    }
     @Override
     public int andar(int andar) {
         return andar * this.numeroCasas;
