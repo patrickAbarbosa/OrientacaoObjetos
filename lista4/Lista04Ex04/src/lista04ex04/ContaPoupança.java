@@ -8,6 +8,6 @@ public class ContaPoupança extends Conta {
     
     @Override
     public void atualizarSaldo(float taxa) {
-        this.saldo += (this.saldo * taxa * 3 );
+        this.saldo += (this.saldo * taxa * 3 )/100;
     }
 }

@@ -1,6 +1,6 @@
-package lista04ex04;
+package lista04ex05;
 
-public class ContaCorrente extends Conta {
+public class ContaCorrente implements Tributavel, Conta {
 
     public ContaCorrente() {
         super();
@@ -14,5 +14,10 @@ public class ContaCorrente extends Conta {
     @Override
     public void atualizarSaldo(float taxa) {
         this.saldo += (this.saldo * taxa * 2)/100;
+    }
+
+    @Override
+    public void calcularTributo() {
+        this.saldo -= (this.saldo * 1)/100;
     }
 }
